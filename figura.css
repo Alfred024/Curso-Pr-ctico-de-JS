@@ -2,6 +2,7 @@ html{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .cuadrado_section{
+    margin-bottom: 20px;
     background: linear-gradient(207.8deg, rgb(77, 76, 76), rgb(195, 19, 136) 80%);;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ html{
 section .main_cuadrado_section{
     margin-bottom: 20px;
     height: 50px;
-    border-bottom: solid purple 1px;
+    border-bottom: solid rgb(86, 2, 86) 1px;
     margin-left: 10px;
     display: grid;
     grid-template-columns: 30px 1fr;
@@ -23,19 +24,18 @@ section .main_cuadrado_section{
 section .main_cuadrado_section img{
     width: 20px;
 }
-.cuadrado_section form{
+form{
     display: flex;
     flex-direction: column;
 }
-.cuadrado_section form input{
-    background-color: rgb(222, 123, 189);
+form input{
+    color: white;
+    background-color: rgb(70, 70, 70);
     border: solid black 1px;
     border-radius: 5px;
 }
-.cuadrado_section form input:hover{
-    border: solid black 2px;
-}
-.cuadrado_section form button{
+
+form button{
     margin: 0 auto;
     padding: 5px 2px;
     width: 70%;
@@ -45,6 +45,18 @@ section .main_cuadrado_section img{
     border-radius: 5px;
     margin-top: 15px;
 }
-.cuadrado_section form button:hover{
+form button:hover{
     background-color: rgb(169, 95, 144);
+}
+.triangulo_section{
+    background: linear-gradient(207.8deg, rgb(77, 76, 76), rgb(232, 190, 53) 80%);;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: solid orange;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.triangulo_section form button:hover{
+    background-color: rgb(187, 117, 26);
 }

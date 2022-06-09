@@ -14,14 +14,14 @@ console.groupEnd();
 
 
 ///////////////////Triángulos///////////////////////////
-console.group("Cuadrados")
+console.group("Triángulos")
 
 function perimetroTriangulo(lado1, lado2, base){
-    return lado1+lado2+base;
+    return Number(lado1)+Number(lado2)+Number(base);
 }
 
 function areaTriangulo(base, altura){
-    return (base*altura)/2;
+    return (Number(base)*Number(altura))/2;
 }
 
 console.groupEnd();
@@ -52,6 +52,8 @@ console.groupEnd();
 
 
 //Conectando HTML con Javascript
+
+//BOTONES DEL CUADRADO
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
@@ -65,3 +67,29 @@ function calcularAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
+
+//BOTONES DEL TRIÁNGULO
+function calcularPerimetroTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+    const input2 = document.getElementById("inputTriangulo2");
+    const value2 = input2.value;
+    const inputBase = document.getElementById("inputTrianguloBase");
+    const valueBase = inputBase.value;
+    
+    const perimetroTrian = perimetroTriangulo(value, value2, valueBase);
+    alert(perimetroTrian);
+}
+
+function calcularAreaTriangulo(){
+    const inputBase = document.getElementById("inputTrianguloBase");
+    const valueBase = inputBase.value;
+    const inputAltura = document.getElementById("inputTrianguloAltura");
+    const valueAltura = inputAltura.value;
+
+    const areaTrian = areaTriangulo(valueBase, valueAltura);
+    alert(areaTrian);
+}
+
+//BOTONES DEL CIRCULO
