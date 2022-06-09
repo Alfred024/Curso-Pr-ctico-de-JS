@@ -24,6 +24,15 @@ function areaTriangulo(base, altura){
     return (Number(base)*Number(altura))/2;
 }
 
+function alturaIsoceles(lado1, lado2, base){
+    if(lado1===lado2 || lado1 ===base || lado2 === base){
+        const altura = Math.sqrt((lado1*lado1)-((base/2)*(base/2)));
+        return altura;
+    }else{
+        return console.log("El triángulo no es isóceles")
+    }
+}
+
 console.groupEnd();
 ///////////////////////////////////////////////////////////
 
