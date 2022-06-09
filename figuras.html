@@ -21,13 +21,33 @@
         </div>
         
         <form action="" > 
-            <label for="inputCuadrado">Lado del cuadrado:</label>
-            <input id="inputCuadrado" type="number">
+            <label for="inputTriangulo">Lado del cuadrado:</label>
+            <input id="inputTriangulo" type="number">
             <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
         </form>
     </section>
 
+    <section class="cuadrado_section">
+        <div class="main_cuadrado_section">
+            <img src="./icons/triangle.png" alt="">
+            <h2>Triángulo</h2>
+        </div>
+        
+        <form action="" > 
+            <label for="inputTriangulo">Lado 1:</label>
+            <input id="inputTriangulo" type="number">
+            <label for="inputTriangulo2">Lado 2:</label>
+            <input id="inputTriangulo2" type="number">
+            <label for="inputTrianguloBase">Base:</label>
+            <input id="inputTrianguloBase" type="number">
+            <label for="inputTrianguloAltura">Altura:</label>
+            <input id="inputTrianguloAltura" type="number">
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+        </form>
+    </section>
     
     <script src="./figuras.js">
         //Y aquí puedes escribir tu código JavaScript

@@ -14,7 +14,7 @@ console.groupEnd();
 
 
 ///////////////////Triángulos///////////////////////////
-console.group("Cuadrados")
+console.group("Triángulos")
 
 function perimetroTriangulo(lado1, lado2, base){
     return lado1+lado2+base;
@@ -52,6 +52,8 @@ console.groupEnd();
 
 
 //Conectando HTML con Javascript
+
+///////////////////CUADRADO///////////////////////////////
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
@@ -64,4 +66,19 @@ function calcularAreaCuadrado(){
     const value = input.value;
     const area = areaCuadrado(value);
     alert(area);
+    console.log(area);
+}
+
+
+///////////////////TRIAGULO/////////////////////////////
+function calcularPerimetroTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+    const input2 = document.getElementById("inputTriangulo2");
+    const value2 = input2.value2;
+    const inputBase = document.getElementById("inputTrianguloBase");
+    const valueBase = inputBase.valueBase;
+
+    const perimetro = perimetroTriangulo(value,value2,valueBase);
+    alert(perimetro);
 }
