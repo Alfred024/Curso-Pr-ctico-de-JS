@@ -45,7 +45,7 @@ function perimetroCirculo(radio){
 }
 
 function areaCirculo(radio){
-    return (radio*radio) * PI;
+    return (Number(radio)*Number(radio)) * PI;
 }
 console.groupEnd();
 ///////////////////////////////////////////////////////////
@@ -93,3 +93,16 @@ function calcularAreaTriangulo(){
 }
 
 //BOTONES DEL CIRCULO
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("inputRadio");
+    const value = input.value;
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputRadio");
+    const value = input.value;
+    const area = areaCirculo(value);
+    alert(area);
+}
