@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller #1</title>
+    <link rel="stylesheet" href="./figura.css">
 </head>
 
 <body>
-    <h1>Figuras geométricas</h1>
+
+    <header>
+        <h1>Figuras geométricas</h1>
+    </header>
+
+    <section class="cuadrado_section">
+        <h2>Cuadrado</h2>
+
+        <form action="" >
+            
+            <label for="inputCuadrado">Lado del cuadrado:</label>
+            <input id="inputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
+        </form>
+
+    </section>
 
     <script src="./figuras.js">
         //Y aquí puedes escribir tu código JavaScript
-        
     </script>
+
+
 </body>
 
 </html>
