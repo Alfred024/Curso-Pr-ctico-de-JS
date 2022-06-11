@@ -6,6 +6,10 @@ html{
     justify-content: space-around;
 }
 
+.cont_calculadoras #specific_height{
+    height: 380px;
+}
+
 .cuadrado_section{
     margin-bottom: 20px;
     background: linear-gradient(207.8deg, rgb(77, 76, 76), rgb(195, 19, 136) 80%);;
@@ -77,4 +81,21 @@ form button:hover{
 }
 .circulo_section form button:hover{
     background-color: rgb(71, 13, 134);
+}
+
+@media (max-width:1000px) {
+    .cont_calculadoras{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        place-items: center;
+    }
+
+}
+
+@media (max-width:680px) {
+    .cont_calculadoras{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
 }
