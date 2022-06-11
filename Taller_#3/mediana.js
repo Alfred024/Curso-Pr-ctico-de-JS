@@ -69,6 +69,8 @@ function ordenarArrayYutu(array){
 //Función hecha por mi
 function calcularMediana(lista){
 
+    ordenarArray2(lista);
+
     const mitadLista = Math.trunc(lista.length/2);
     let mediana;
     if (lista.length%2 != 0){
@@ -79,4 +81,13 @@ function calcularMediana(lista){
 
     return mediana;
 }
+
+
+//CONFIGURACIÓN BOTONES 
+function calcularMedianaButton(){
+    const input = document.getElementById("inputPromedio");
+    const value = input.value;
+    console.log(value);
+}
+
 
